@@ -5,10 +5,9 @@ basic:
         staging: ''
         development: ''
     breakpoints:
-        - 376
         - 640
-        - 1024
-        - 1366
+        - 960
+        - 1170
     pages:
         - /
         - /sobre_nos
@@ -27,12 +26,24 @@ advanced:
     headers:
         - { header: '', value: '' }
     cookies: ''
-    custom_js: ''
+    custom_js: "(function () {\n  const banner = document.querySelector(\".eu-cookie-compliance-banner\");\n  if (banner) {\n    banner.style.display = \"none\";\n  }\n})();\n"
     custom_css: ''
-    mock_content: ''
+    mock_content:
+        - { selector: '', type: title }
     sensitivity: 15
-    night_mode: ''
-    retina_images: ''
+    night_mode: false
+    retina_images: false
+    login:
+        type: none
+        click_element: false
+        click_element_selector: ''
+        login_url: ''
+        username: ''
+        password: ''
+        username_selector: ''
+        password_selector: ''
+        submit_selector: ''
+        after_login_selector: ''
     performance:
         workers_production: 30
         workers_nonproduction: 10
