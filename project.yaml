@@ -6,8 +6,8 @@ basic:
         development: ''
     breakpoints:
         - 640
-        - 960
-        - 1170
+        - 1024
+        - 1366
     pages:
         - /
         - /sobre_nos
